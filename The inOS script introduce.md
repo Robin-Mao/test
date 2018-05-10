@@ -12,7 +12,7 @@ You can build inOS in two ways:
 	<pre><code># git clone https://github.com/inspursoft/inOS.git /opt/inOS	</code></pre>
 2. Change to the dir and run script directly
 	<pre><code># cd /opt/inOS
-	#./inOS-build.sh</code></pre>
+	# ./inOS-build.sh</code></pre>
 3. When the script finished successfully, you can reboot your machine and start inOS by the grub2 boot menu's new entry named 'inOS-docker'.
 4. You can use parameters to change the applications in inOS and something else. For example, you can use --rootpasswd to set inOS's root password. Type --help for detail.
 
@@ -22,10 +22,10 @@ You can build inOS in two ways:
 	<pre><code># git clone https://github.com/inspursoft/inOS.git /opt/inOS	</code></pre>
 3. Move the downloaded rpm packages to the /opt/inOS/repos directory, and run 
 	<pre><code># pushd /opt/inOS/repos
-	#createrepo ./
-	#popd</code></pre>
+	# createrepo ./
+	# popd</code></pre>
 4. Change to the dir and run script
 	<pre><code># cd /opt/inOS
-	#./inOS-buildinstall.sh</code></pre>
+	# ./inOS-buildinstall.sh</code></pre>
 5. When the script finished successfully, the inOS install ISO file will be located in /opt/inOS directory, named "inOS.iso".
 6. You can burn the inOS.iso into your DVD or U-disk, and boot up from them to install the inOS into your scratch machine.
