@@ -1,4 +1,6 @@
+sudo: true
 language: c
 compiler:
     - gcc
-install: apt-get install gawk
+install: 
+    - sudo apt-get install gawk
