@@ -3,6 +3,7 @@ language: c
 compiler:
     - gcc
 install: 
-    - sudo apt-get install gawk
+    - sudo apt-get install gawk wget
+    - wget -c http://download.savannah.gnu.org/releases/acl/acl-2.2.53.tar.gz
 test: true
 script: true
