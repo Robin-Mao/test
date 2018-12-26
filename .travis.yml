@@ -4,6 +4,8 @@ compiler:
     - gcc
 install: 
     - sudo apt-get install gawk wget
-    - wget -c http://download.savannah.gnu.org/releases/acl/acl-2.2.53.tar.gz
+    - mkdir sources
+    - wget --input-file=wget-list --continue --directory-prefix=./sources
+    - pushd sources && md5sum -c ../md5sums && popd
 test: true
 script: true
